@@ -27,14 +27,14 @@ class Config(object):
         'LINE_SERVICES': '1459630796'
     }
 
-    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[368]
-    APP_VER     = '2.1.5'
-    CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'KAZUINO'
+    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[900]
+    APP_VER     = '2.14.5'
+    CARRIER     = '51089, 2-0'
+    SYSTEM_NAME = 'saibot'
     SYSTEM_VER  = '0.18.1660.143.0'
-    IP_ADDR     = '8.8.8.8'
+    IP_ADDR     = '8.8.4.4'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
     def __init__(self):
         self.APP_NAME = '%s\t%s\t%s\t%s' % (self.APP_TYPE, self.APP_VER, self.SYSTEM_NAME, self.SYSTEM_VER)
-        self.USER_AGENT = 'Line/%s' % self.APP_VER
+        self.USER_AGENT = 'Linepc6.0.1/%s' % self.APP_VER
